@@ -3,6 +3,13 @@
     package="com.example.gotogether">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+
 
     <application
         android:allowBackup="true"
@@ -11,7 +18,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.BoardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,14 +35,34 @@
                     android:host="google.com" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity">
+        <activity android:name=".activity.LoginActivity">
         </activity>
-        <activity android:name=".SignUpActivity">
+        <activity android:name=".activity.SignUpActivity">
         </activity>
-        <activity android:name=".PasswordResetActivity">
+        <activity android:name=".activity.PasswordResetActivity">
         </activity>
-        <activity android:name=".MemberInitActivity">
+        <activity android:name=".activity.MemberInitActivity">
         </activity>
+        <activity android:name=".activity.CameraActivity">
+        </activity>
+        <activity android:name=".activity.GalleryActivity">
+        </activity>
+        <activity android:name=".activity.BasicActivity">
+        </activity>
+        <activity android:name=".activity.WritePostActivity">
+        </activity>
+        <activity android:name=".activity.PostActivity">
+        </activity>
+        <activity android:name=".activity.Post2Activity">
+        </activity>
+        <activity android:name=".activity.WriteReportActivity">
+        </activity>
+        <activity android:name=".activity.ReportActivity">
+        </activity>
+
+
+
+
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
-package com.example.gotogether;
+package com.example.gotogether.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -7,11 +8,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.gotogether.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
-public class PasswordResetActivity extends AppCompatActivity {
+public class PasswordResetActivity extends BasicActivity {
     private FirebaseAuth mAuth;
 
     @Override
@@ -22,7 +26,7 @@ public class PasswordResetActivity extends AppCompatActivity {
         // Initialize Firebase Auth
         mAuth = FirebaseAuth.getInstance(); //인스턴스 초기화
 
-        findViewById(R.id.signUpButton).setOnClickListener(OnClikListener);
+        findViewById(R.id.sendButton).setOnClickListener(OnClikListener);
 
     }
 
@@ -30,7 +34,7 @@ public class PasswordResetActivity extends AppCompatActivity {
         @Override
         public void onClick(View v) {
             switch (v.getId()) { //클릭이되었을때
-                case R.id.signUpButton:
+                case R.id.sendButton:
                     send(); //함수실행
                     break;
 
@@ -43,7 +47,7 @@ public class PasswordResetActivity extends AppCompatActivity {
         String email=((EditText)findViewById(R.id.emailEditText)).getText().toString();
 
         if(email.length()>0){
-            mAuth.sendPasswordResetEmail(email)
+            mAuth.sendPasswordResetEmail(email) //비밀번호재설정이메일보내기 로직
                     .addOnCompleteListener(new OnCompleteListener<Void>() {
                         @Override
                         public void onComplete(@NonNull Task<Void> task) {

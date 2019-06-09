@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "254946592967",
-    "firebase_url": "https://gotogether-e5e9e.firebaseio.com",
-    "project_id": "gotogether-e5e9e",
-    "storage_bucket": "gotogether-e5e9e.appspot.com"
+    "project_number": "58035095581",
+    "firebase_url": "https://gotogether-f4066.firebaseio.com",
+    "project_id": "gotogether-f4066",
+    "storage_bucket": "gotogether-f4066.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:254946592967:android:1aaea845402fc67d",
+        "mobilesdk_app_id": "1:58035095581:android:1aaea845402fc67d",
         "android_client_info": {
           "package_name": "com.example.gotogether"
         }
       },
       "oauth_client": [
         {
-          "client_id": "254946592967-nm2fjip4m1432iui31mudnkom9sa9eb9.apps.googleusercontent.com",
+          "client_id": "58035095581-djiuknbsp1l4nh9asu3a679t1g0jhunm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gotogether",
+            "certificate_hash": "0ed7a2b48fc45100ea4f690f57e69edda2e1ce8c"
+          }
+        },
+        {
+          "client_id": "58035095581-t63eec2u1s6r6194f5ct9l7m999hphut.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDi6ErIH377v-WmAOiz6uSjyieBRyDqfMk"
+          "current_key": "AIzaSyD12u2fbvUSIaW5xc2XbQGILyz-wBx-QSw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "254946592967-nm2fjip4m1432iui31mudnkom9sa9eb9.apps.googleusercontent.com",
+              "client_id": "58035095581-t63eec2u1s6r6194f5ct9l7m999hphut.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
